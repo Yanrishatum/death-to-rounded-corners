@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DTRC: Github
 @namespace      github.com/Yanrishatum/death-to-rounded-corners
-@version        1.0.0
+@version        1.1.0
 @description    Death to rounded corners! Github edition
 @author         Yanrishatum
 @preprocessor default
@@ -24,8 +24,17 @@
   .filter-item,
   .delete-topic-button, .topic-tag, .topic-tag-action,
   .file-header, .tabnav-tab, .file, .branch-name,
-  .label, .Label
+  .label, .Label,
+  .user-status-circle-badge,
+  .graph-before-activity-overview
   {
     border-radius: var(--borderRadius) !important;
+  }
+  .user-status-circle-badge-container {
+    margin-bottom: 2px;
+  }
+  .calendar-graph rect.day {
+    rx: 0;
+    ry: 0;
   }
 }
