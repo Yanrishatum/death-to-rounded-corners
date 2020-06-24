@@ -4,6 +4,8 @@
 @version        1.0.0
 @description    Death to rounded corners! Github edition
 @author         Yanrishatum
+@preprocessor default
+@var text borderRadius "Border Radius" 0px
 ==/UserStyle== */
 
 @-moz-document domain("github.com") {
@@ -19,8 +21,11 @@
   .rounded-1,.rounded-2,.rounded-3,
   .tooltipped:after,
   .issues-reset-query-icon,
-  .filter-item
+  .filter-item,
+  .delete-topic-button, .topic-tag, .topic-tag-action,
+  .file-header, .tabnav-tab, .file, .branch-name,
+  .label, .Label
   {
-    border-radius: 0px !important;
+    border-radius: var(--borderRadius) !important;
   }
 }
